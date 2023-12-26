@@ -1,24 +1,23 @@
 package com.example.demo.lombok;
 
-import lombok.*;
+import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
 @Setter
-@ToString
-@NoArgsConstructor
+@Getter
 @AllArgsConstructor
+@ToString
 @Builder
-public class Person {
-	
-	String name;
-	
-	int age;
+
+public class Movie {
+	String title;
+	String director;
+	LocalDate releaseDate;
 	
 	
 }

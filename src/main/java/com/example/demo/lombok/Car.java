@@ -1,24 +1,21 @@
 package com.example.demo.lombok;
 
-import lombok.*;
-
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
 @Setter
-@ToString
-@NoArgsConstructor
+@Getter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class Person {
+@ToString
+public class Car {
 	
-	String name;
-	
-	int age;
-	
-	
+	String model;
+	String company;
+	String color;
 }
